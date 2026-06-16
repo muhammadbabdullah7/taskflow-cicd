@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List - TaskFlow</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f6f9;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .status {
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .completed { background-color: #4CAF50; color: white; }
+        .pending { background-color: #ff9800; color: white; }
+        .btn {
+            padding: 8px 15px;
+            background-color: #2196F3;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📋 Task List</h1>
+        
+        <p><a href="add-task.html" class="btn">+ Add New Task</a></p>
+
+        <table>
+            <tr>
+                <th>Task ID</th>
+                <th>Task Title</th>
+                <th>Assigned To</th>
+                <th>Due Date</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+            <!-- Sample Tasks -->
+            <tr>
+                <td>#001</td>
+                <td>Design Login Page</td>
+                <td>Hafsa</td>
+                <td>2026-06-15</td>
+                <td><span class="status completed">Completed</span></td>
+                <td><a href="task-detail.html" class="btn">View</a></td>
+            </tr>
+            <tr>
+                <td>#002</td>
+                <td>Implement Task List</td>
+                <td>Saboor</td>
+                <td>2026-06-18</td>
+                <td><span class="status pending">Pending</span></td>
+                <td><a href="task-detail.html" class="btn">View</a></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
